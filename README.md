@@ -64,8 +64,12 @@ O deploy foi feito com a opção **Static HTML**, sem necessidade de build ou se
 
 Estudantes e professores de engenharia, matemática aplicada ou áreas relacionadas que desejam visualizar e compreender o uso de métodos numéricos na robótica.
 
+## Inspiração
+https://pt.planetcalc.com/
+
 ## 📄 Licença
 
 Este projeto é de uso educacional e está disponível sob a licença **MIT**.  
 Sinta-se livre para estudar, modificar e compartilhar.
+
 
