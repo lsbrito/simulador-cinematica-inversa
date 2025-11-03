@@ -207,3 +207,47 @@ p, ul, li {
 .limpar-simulacao button:hover {
   background-color: #c0392b;
 }
+
+.botao-padrao {
+  padding: 8px 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.botao-padrao:hover {
+  background-color: #2980b9;
+}
+
+.entrada input[type="number"] {
+  width: 100px;
+  padding: 8px;
+  margin: 5px 10px 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  background-color: #fff;
+  color: #2c3e50;
+}
+
+.entrada label {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #2c3e50;
+}
+
+.menu {
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu button {
+  transition: background-color 0.3s ease;
+}
+
+.menu button {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* espaço entre ícone e texto */
+}
