@@ -5,18 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simulador de Cinemática Inversa Robótica com Cálculo Numérico</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
   <div class="container">
+    <!-- Menu Didático -->
     <aside class="menu">
       <h2>📚 Menu Didático</h2>
-      <button type="button" onclick="mostrarCinematica()">Cinemática Inversa</button>
-      <button type="button" onclick="mostrarExplicacao()">Ângulos θ₁ e θ₂</button>
-      <button type="button" onclick="mostrarTabela()">Tabela de Testes</button>
-      <button type="button" onclick="mostrarNumerico()">Cálculo Numérico</button>
-      <button type="button" onclick="mostrarFuncao()">Função Zero</button>
-      <button type="button" onclick="mostrarComparacao()">Comparação de Métodos</button>
-      <button type="button" onclick="mostrarNewton()">Método Newton-Raphson</button>
+      <button type="button" onclick="mostrarCinematica()"><i class="fas fa-robot"></i> Cinemática Inversa</button>
+      <button type="button" onclick="mostrarExplicacao()"><i class="fas fa-angle-double-right"></i> Ângulos θ₁ e θ₂</button>
+      <button type="button" onclick="mostrarTabela()"><i class="fas fa-table"></i> Tabela de Testes</button>
+      <button type="button" onclick="mostrarNumerico()"><i class="fas fa-calculator"></i> Cálculo Numérico</button>
+      <button type="button" onclick="mostrarFuncao()"><i class="fas fa-square-root-variable"></i> Função Zero</button>
+      <button type="button" onclick="mostrarComparacao()"><i class="fas fa-balance-scale"></i> Comparação de Métodos</button>
+      <button type="button" onclick="mostrarNewton()"><i class="fas fa-project-diagram"></i> Método Newton-Raphson</button>
     </aside>
 
     <main class="conteudo">
@@ -26,14 +29,19 @@
 
       <section class="entrada">
         <h2>🎯 Entrada de Dados</h2>
-        <label for="x">X:</label>
-        <input type="number" id="x" />
-        <label for="y">Y:</label>
-        <input type="number" id="y" />
-        <button type="button" onclick="calcular()">Calcular</button>
+        <label for="x">Posição X desejada:</label>
+        <input type="number" id="x" value="100" />
+        <label for="y">Posição Y desejada:</label>
+        <input type="number" id="y" value="80" />
+        <button type="button" class="botao-padrao" onclick="calcular()">Calcular</button>
+
+
         <div class="resultado-container">
           <p id="resultado"></p>
         </div>
+        
+        
+        
       </section>
 
       <section class="visual">
@@ -66,12 +74,12 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
   <footer style="text-align: center; font-size: 0.9em; color: #666; margin-top: 40px;">
   © 2025 TREE. Todos os direitos reservados. Este simulador foi desenvolvido para fins educacionais e está protegido por direitos autorais.
 </footer>
 
+  <script src="script.js"></script>
+ 
+
 </body>
 </html>
-
-
