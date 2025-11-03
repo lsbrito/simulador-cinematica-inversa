@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador de Cinemática Inversa Robótica com Cálculo Numérico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="menu">
+      <h2>📚 Menu Didático</h2>
+      <button type="button" onclick="mostrarCinematica()">Cinemática Inversa</button>
+      <button type="button" onclick="mostrarExplicacao()">Ângulos θ₁ e θ₂</button>
+      <button type="button" onclick="mostrarTabela()">Tabela de Testes</button>
+      <button type="button" onclick="mostrarNumerico()">Cálculo Numérico</button>
+      <button type="button" onclick="mostrarFuncao()">Função Zero</button>
+      <button type="button" onclick="mostrarComparacao()">Comparação de Métodos</button>
+      <button type="button" onclick="mostrarNewton()">Método Newton-Raphson</button>
+    </aside>
+
+    <main class="conteudo">
+      <section class="cabecalho">
+        <h1>🧠 Simulador de Cinemática Inversa Robótica com Cálculo Numérico</h1>
+      </section>
+
+      <section class="entrada">
+        <h2>🎯 Entrada de Dados</h2>
+        <label for="x">X:</label>
+        <input type="number" id="x" value="100" />
+        <label for="y">Y:</label>
+        <input type="number" id="y" value="80" />
+        <button type="button" onclick="calcular()">Calcular</button>
+        <div class="resultado-container">
+          <p id="resultado"></p>
+        </div>
+      </section>
+
+      <section class="visual">
+        <div>
+          <h3>🦾 Simulador do Braço Robótico</h3>
+          <canvas id="canvas" width="300" height="300"></canvas>
+        </div>
+        <div>
+          <h3>📈 Convergência dos Ângulos</h3>
+          <canvas id="grafico" width="300" height="300"></canvas>
+        </div>
+      </section>
+
+      <section class="historico">
+        <h2>📊 Histórico de Iterações</h2>
+        <ul id="iteracoes-lista"></ul>
+        <div class="historico-botoes">
+          <button onclick="limparSimulacao()">🧹 Limpar Simulação</button>
+          <button onclick="copiarHistorico()">📋 Copiar Histórico</button>
+          <button onclick="exportarCSV()">📄 Exportar CSV</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span onclick="fecharPopup()" class="close">&times;</span>
+      <div id="popup-text"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
