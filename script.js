@@ -224,7 +224,7 @@ function mostrarComparacao() {
 </li>
       <li><strong>Newton-Raphson:</strong> método de convergência muito rápida, utiliza derivadas e é sensível à escolha do ponto inicial.</li>
     </ul>
-    <p>Esses métodos são fundamentais na engenharia para resolver equações não lineares, como as que surgem na cinemática inversa de robôs.</p>
+    <p>Com vasta aplicabilidade em múltiplos campos, esses métodos são fundamentais na engenharia. Eles permitem a resolução de equações não lineares complexas, como as encontradas nos problemas de cinemática inversa de robôs, onde soluções analíticas podem ser inviáveis.</p>
   `;
   abrirPopup(texto);
 }
@@ -446,4 +446,5 @@ function limparSimulacao() {
   const ctxGrafico = canvasGrafico.getContext("2d");
   ctxGrafico.clearRect(0, 0, canvasGrafico.width, canvasGrafico.height);
 }
+
 
