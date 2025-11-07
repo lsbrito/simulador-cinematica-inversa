@@ -218,11 +218,11 @@ function mostrarComparacao() {
     </table>
     <p><strong>Observações:</strong></p>
     <ul>
-      <li><strong>Bisseção:</strong> Bisseção: método com convergência garantida, porém lenta, exigindo intervalo inicial com mudança de sinal.
+      <li><strong>Bisseção:</strong> Método com convergência garantida, porém lenta, exigindo intervalo inicial com mudança de sinal.
 </li>
-      <li><strong>Secante:</strong> método de convergência mais rápida, dispensa derivadas, mas depende de estimativas iniciais adequadas.
+      <li><strong>Secante:</strong> Método de convergência mais rápida, dispensa derivadas, mas depende de estimativas iniciais adequadas.
 </li>
-      <li><strong>Newton-Raphson:</strong> método de convergência muito rápida, utiliza derivadas e é sensível à escolha do ponto inicial.</li>
+      <li><strong>Newton-Raphson:</strong> Método de convergência muito rápida, utiliza derivadas e é sensível à escolha do ponto inicial.</li>
     </ul>
     <p>Com vasta aplicabilidade em múltiplos campos, esses métodos são fundamentais na engenharia. Eles permitem a resolução de equações não lineares complexas, como as encontradas nos problemas de cinemática inversa de robôs, onde soluções analíticas podem ser inviáveis.</p>
   `;
@@ -446,5 +446,6 @@ function limparSimulacao() {
   const ctxGrafico = canvasGrafico.getContext("2d");
   ctxGrafico.clearRect(0, 0, canvasGrafico.width, canvasGrafico.height);
 }
+
 
 
